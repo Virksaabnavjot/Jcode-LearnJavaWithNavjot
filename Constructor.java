@@ -22,8 +22,9 @@ SOFTWARE.
 */
 
 /*
-*Constructor.Java
+*Constructor.java
 *Purpose: This class demonstrates different types of Constructors we can have in Java
+*Date:7/August/2017 
 */
 public class Constructor{
 

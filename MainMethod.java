@@ -22,9 +22,10 @@ SOFTWARE.
 */
 
 /*
-*MainMethod.Java
+*MainMethod.java
 *Purpose: This class helps understand the role of MainMethod in Java
 *public static void main (String args []){}
+*Date:7/August/2017
 */
 
 public class MainMethod{
@@ -60,7 +61,7 @@ public class MainMethod{
 
       //inside the method we write all the code that we want to be executed when we run the program
       System.out.println("Welcome, Navjot");
-      
+
     }
 
   }
