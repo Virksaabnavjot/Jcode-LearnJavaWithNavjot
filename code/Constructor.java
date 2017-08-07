@@ -61,8 +61,6 @@ public class Constructor{
   (with no parameters and no body), you must explicitly declare an empty constructor for the class.
   */
 
-
-
   //Constructor 2: Default constructor
   public Constructor(){
 
@@ -76,19 +74,34 @@ public class Constructor{
 
   //Constructor 3: parametrised constructor
   //(this constructor will be used to demonstrate how we can call a constructor within another using this keyword)
+  // https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
   public Constructor(String name){
 
     //using this keyword within a constructor to call another constructor
     //Example: this(name,description);
-    this("Name: Constructor 1", "Description: I am Constructor 1");
-    this.name = name;
+    this("Name: Calling Constructor 1", "Description: Calling Constructor 1 from within Constructor 3");
+    this.name = name; //comment this line out if you want to override the name with the name
+    //from foreign constructor (i.e constructor 1)
   }
 
-
-  //main method - here is where we code
+  //main method - more Explanation available in MainMethod.java class
   public static void main(String args []){
     System.out.println("Welcome to Constructor Class");
     System.out.println("This class demonstrate different types of Constructors we can have in Java.");
+
+    //Constructor 1 Usage
+    System.out.println("Constructor 1 Usage");
+    Constructor c1 = new Constructor("Name: Constructor 1", "Description: I am constructor 1's instance");
+    System.out.println(c1.name +" \n"+ c1.description);
+
+    //Constructor 3 Usage
+    System.out.println("Constructor 3 Usage");
+    Constructor c3 = new Constructor("Name: Constructor 3");
+    //gives out the name for c3 - Name: Constructor 3  (if we comment out: this.name = name;
+    //within the constructor declaration it will return - Name: Calling Constructor 1)
+    System.out.println(c3.name);
+    System.out.println(c3.description); //since we can see from c3 declaration we dont have a description value for it
+    //but since we called c1 within it using this keyword we can have description value for that reason
   }
 }
 
