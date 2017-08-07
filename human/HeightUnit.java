@@ -34,7 +34,8 @@ public class HeightUnit{
   //declaring variables
   int feet, inches, centemeters;
   double meters;
-  HeightUnit unit;
+  //HeightUnit unit;
+  Height height;
 
   public HeightUnit(){
     //default constructor/look for Constructor.java class for more info on java constructors
@@ -66,7 +67,9 @@ public class HeightUnit{
 
 
   //getters
-
+  public Height getHeightInFeet(){
+    return Height(int feet, int inches);
+  }
   //get height in feet
 
   //conversions

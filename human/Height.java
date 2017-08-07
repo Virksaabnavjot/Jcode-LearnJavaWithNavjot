@@ -36,7 +36,7 @@ public class Height{
   //declaring variables
   int feet, inches, centemeters;
   double meters;
-  //HeightUnit unit;
+  HeightUnit unit;
 
   //Note: Refer to Constructor.java class for detailed info on java constructors
   //default constructor
@@ -55,7 +55,8 @@ public class Height{
   public Height(double meters){
     this.meters = meters;
   }
-
+ unit.setHeightInMeters(0.0);
+ Height height = unit.getHeightInFeet();
 
 
 }
