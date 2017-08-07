@@ -26,8 +26,9 @@ Purpose: This class demonstrate different types of Constructors we can have in J
 */
 public class Constructor{
 
-  //default Constructor or zero Constructor that takes no arguments
+  //public keyword indicates other classes can access the constructor
   public Constructor(){
+    //default Constructor or zero Constructor that takes no arguments
   }
 
   //main method - here is where we code
@@ -36,3 +37,14 @@ public class Constructor{
     System.out.println("This class demonstrate different types of Constructors we can have in Java");
   }
 }
+
+/*Explanation: http://www.dummies.com/programming/java/how-to-use-a-constructor-in-java/
+
+In Java, Constructor is a small piece of code similar to a method that’s called when an instance of an object is created.
+Here are the key differences between a constructor and a method:
+- A constructor doesn’t have a return type.
+- The name of the constructor must be the same as the name of the class.
+- Unlike methods, constructors are not considered members of a class.
+- A constructor is called automatically when a new instance of an object is created.
+
+*/
