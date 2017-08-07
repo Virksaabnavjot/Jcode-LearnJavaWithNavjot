@@ -23,7 +23,7 @@ SOFTWARE.
 
 /*
 *Constructor.Java
-*Purpose: This class demonstrate different types of Constructors we can have in Java
+*Purpose: This class demonstrates different types of Constructors we can have in Java
 */
 public class Constructor{
 
