@@ -1,5 +1,6 @@
 /*
-Copyright (c) 2017-2018 Navjot Singh Virk (https://navsingh.org.uk)
+Copyright (c) 2017-2018 Navjot Singh Virk (Website: https://navsingh.org.uk),
+(Project Git: https://github.com/virksaabnavjot/jcode)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,14 +23,48 @@ SOFTWARE.
 
 /*
 *Constructor.Java
-Purpose: This class demonstrate different types of Constructors we can have in Java
+*Purpose: This class demonstrate different types of Constructors we can have in Java
 */
 public class Constructor{
+
+  //declaring variables - the name and description for the constructor
+  String name;
+  String description;
+
+  /*
+  A constructor allows you to provide initial values for class fields when you create the object.
+  Suppose for this class named Constructor we have fields named name and description.
+  You can create a constructor for the Actor class:
+  */
+
+  //parametrised constructor
+  public Constructor(String name, String description){
+
+    /* this keyword - Each argument to the constructor shadows one of the object's fields
+    — inside the constructor name is a local copy of the constructor's first argument.
+    To refer to the Main Class field name, the constructor must use this.name.
+    - From within a constructor, you can also use the this keyword to call another constructor in the same class.
+    Doing so is called an explicit constructor invocation
+
+    https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
+    */
+
+    this.name = name;
+    this.description = description;
+  }
+  /*
+  If you explicitly declare any constructors for a class, Java does not create
+  a default constructor for the class. As a result, if you declare a constructor
+  that accepts parameters and still want to have an empty constructor
+  (with no parameters and no body), you must explicitly declare an empty constructor for the class.
+  */
 
   //public keyword indicates other classes can access the constructor
   public Constructor(){
     //default Constructor or zero Constructor that takes no arguments
   }
+
+
 
   //main method - here is where we code
   public static void main(String args []){
