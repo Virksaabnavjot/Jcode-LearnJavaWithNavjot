@@ -22,19 +22,40 @@ SOFTWARE.
 */
 
 /*
-*Human.java
-*Purpose: Represents the properties of a human being
+*Height.java
+*Purpose: Allows to recieve height in 2 different mesurements - 1 -Feet & inches
+ and 2: Meters, and allows to convert them to inches, centemeters or other unit
+ if feet convert to meters or convert from meters to feet
 *Date:7/August/2017
 */
 
 package human;
 
-public class Human{
+public class Height{
 
-  String name;
-  int age;
-  double weight;
-  Height height;
+  //declaring variables
+  int feet, inches, centemeters;
+  double meters;
+  //HeightUnit unit;
+
+  //Note: Refer to Constructor.java class for detailed info on java constructors
+  //default constructor
+  public Height(){
+    //takes no arguments
+  }
+
+  //parametrised constructor - to take feet and inches values
+  public Height(int feet, int inches){
+    //this.unit = "feet";
+    this.feet = feet;
+    this.inches = inches;
+  }
+
+  //constructor to meters value
+  public Height(double meters){
+    this.meters = meters;
+  }
+
 
 
 }
