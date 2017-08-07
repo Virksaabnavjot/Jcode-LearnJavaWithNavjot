@@ -37,7 +37,7 @@ public class Constructor{
   You can create a constructor for the Actor class:
   */
 
-  //parametrised constructor
+  //Constructor 1: parametrised constructor
   public Constructor(String name, String description){
 
     /* this keyword - Each argument to the constructor shadows one of the object's fields
@@ -49,8 +49,10 @@ public class Constructor{
     https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
     */
 
+    //using this keyword with a field
     this.name = name;
     this.description = description;
+
   }
   /*
   If you explicitly declare any constructors for a class, Java does not create
@@ -59,17 +61,34 @@ public class Constructor{
   (with no parameters and no body), you must explicitly declare an empty constructor for the class.
   */
 
-  //public keyword indicates other classes can access the constructor
+
+
+  //Constructor 2: Default constructor
   public Constructor(){
-    //default Constructor or zero Constructor that takes no arguments
+
+    //public keyword indicates other classes can access the constructor
+
+    /*default Constructor or zero Constructor that takes no arguments
+    if you dont define one java creates one by itself but if any other constructor exists
+    you have to explicitly declare default constructor
+    */
   }
 
+  //Constructor 3: parametrised constructor
+  //(this constructor will be used to demonstrate how we can call a constructor within another using this keyword)
+  public Constructor(String name){
+
+    //using this keyword within a constructor to call another constructor
+    //Example: this(name,description);
+    this("Name: Constructor 1", "Description: I am Constructor 1");
+    this.name = name;
+  }
 
 
   //main method - here is where we code
   public static void main(String args []){
     System.out.println("Welcome to Constructor Class");
-    System.out.println("This class demonstrate different types of Constructors we can have in Java");
+    System.out.println("This class demonstrate different types of Constructors we can have in Java.");
   }
 }
 
