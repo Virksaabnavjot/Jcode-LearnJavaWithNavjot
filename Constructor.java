@@ -34,7 +34,6 @@ public class Constructor{
   /*
   A constructor allows you to provide initial values for class fields when you create the object.
   Suppose for this class named Constructor we have fields named name and description.
-  You can create a constructor for the Actor class:
   */
 
   //Constructor 1: parametrised constructor

@@ -32,7 +32,7 @@ public class MainMethod{
   //default constructor
   public MainMethod(){}
 
-    //Main Method
+
     /*Explanation: http://www.code2learn.com/2011/11/public-static-void-mainstring-args.html
     -Why public (access modifier) ?
     Public means that this Method will be accessible by any Class(If other Classes
@@ -54,9 +54,13 @@ public class MainMethod{
     present when the program is executed.
 
     */
+
+    //Main Method
     public static void main(String args []){
+
       //inside the method we write all the code that we want to be executed when we run the program
       System.out.println("Welcome, Navjot");
+      
     }
 
   }
