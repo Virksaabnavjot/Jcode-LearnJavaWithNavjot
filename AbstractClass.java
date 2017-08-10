@@ -34,7 +34,7 @@ abstract class AbstractClass{
   declare the common characterstics like name, age, phone etc of student and teacher
   in a person class, so that we dont have to write the same code again and again.
   In Java, its not possible to create an object of an abstract class (because it won't
-  be of any use why whould we create an object of person class with no purpose and just
+  be of any use why would we create an object of person class with no purpose and just
   name, age, phone etc and not represent anything), thats why we use "abstract" keyword
   to make classes abstract so that no one even by mistake can create an instance of that
   class, instead we can extend the class or create a referance variable of the class
@@ -48,11 +48,38 @@ abstract class AbstractClass{
   characterstics and method that describe the actions that a class can perform.
   */
 
+  //declaring variables
+  String name, address, phone;
+  int age;
 
+  //abstract method - more Explanation available in AbstractMethod.java class
+  abstract void showAllDetails();
 
+  //implemented methods
+  void showNameAndAddress(){
+    name = "Navjot";
+    address = "Apt. 14 Henrie...., Ireland";
+    System.out.println("Name: " +name+ "\n" + "Address: " +address);
+  }
+}
 
+class LetsTryExtendingAbstractClass extends AbstractClass{
 
+void showAllDetails(){
+  name = "Navjot";
+  address = "Apt. 14 Henrie...., Ireland";
+  phone = "+35389211....";
+  age = 22;
+  System.out.println("Name: " +name+ "\n" + "Address: " +address+ "\n" + "Phone: "
+  +phone+ "\n" + "Address: " +address);
+}
 
+}
 
-
+class MakeUse{
+  public static void main(String[] args) {
+    LetsTryExtendingAbstractClass l = new LetsTryExtendingAbstractClass();
+    l.showAllDetails();
+    l.showNameAndAddress();
+  }
 }
