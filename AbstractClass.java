@@ -27,7 +27,11 @@ SOFTWARE.
 *Date:10/August/2017 | 5:13pm / Dublin,Ireland
 */
 
-abstract AbstractClass{
+abstract class AbstractClass{
+  /*Explanation: Abstract Class in Java (Hindi) https://www.youtube.com/watch?v=bIQMuFPgKpM
+
+
+  */
 
 
 
@@ -36,12 +40,4 @@ abstract AbstractClass{
 
 
 
-
-
-
-
-
-
-
-  
 }
