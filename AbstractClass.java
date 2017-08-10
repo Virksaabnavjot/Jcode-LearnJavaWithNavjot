@@ -29,8 +29,23 @@ SOFTWARE.
 
 abstract class AbstractClass{
   /*Explanation: Abstract Class in Java (Hindi) https://www.youtube.com/watch?v=bIQMuFPgKpM
+  1- Abstract classes are used to declare common characterstics of subclasses
+  Example: Person (Abstract Class) -> Student and Teacher (Subclasses), can
+  declare the common characterstics like name, age, phone etc of student and teacher
+  in a person class, so that we dont have to write the same code again and again.
+  In Java, its not possible to create an object of an abstract class (because it won't
+  be of any use why whould we create an object of person class with no purpose and just
+  name, age, phone etc and not represent anything), thats why we use "abstract" keyword
+  to make classes abstract so that no one even by mistake can create an instance of that
+  class, instead we can extend the class or create a referance variable of the class
+  Usage Example:
+  Inheritance :public class Student extends Person{}
+  Referance variable: Person p = new Student();
 
+  2- Abstract class can only be used as a superclass for other classes that extend it.
 
+  3- Like any other class, abstract class can contain field that describe the
+  characterstics and method that describe the actions that a class can perform.
   */
 
 
