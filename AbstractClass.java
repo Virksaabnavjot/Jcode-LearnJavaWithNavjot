@@ -44,6 +44,7 @@ abstract class TheAbstractClass{
   to make classes abstract so that no one even by mistake can create an instance of that
   class, instead we can extend the class or create a referance variable of the class
   Usage Example:
+  Abstract class: abstract class Person{}
   Inheritance :public class Student extends Person{}
   Referance variable: Person p = new Student();
 
