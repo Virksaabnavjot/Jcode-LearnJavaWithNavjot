@@ -84,11 +84,11 @@ class LetsTryExtendingTheAbstractClass extends TheAbstractClass{
 }
 
 /*This class is a normal class with the main method, that will allow us to try out
-everything our within just one file then creating multiple file and getting lost
-look for TheAbstractClass BELOW to see Explanation and how abstract class is done,
+everything within just one file then creating multiple files and getting lost
+look for TheAbstractClass to see Explanation and how abstract class is done,
 the name is used as such to keep things simple and organised within the project
 example: if you look at the name AbstractClass.java you know we are dealing with
-abstract classes in their*/
+abstract classes in this file*/
 public class AbstractClass{
   public static void main(String[] args) {
 
@@ -100,7 +100,7 @@ public class AbstractClass{
 
     /*referance variable - here we are creating a referance variable of TheAbstractClass
     using the subclass as in java its not possible to create objects of abstract classes
-    but we can create referance varibales. */
+    but we can create referance varibales using the subclass of the superclass/abstract class. */
     TheAbstractClass a = new LetsTryExtendingTheAbstractClass();
     System.out.println("I am printed using referance variable concept. \n");
     a.showNameAndAddress();
