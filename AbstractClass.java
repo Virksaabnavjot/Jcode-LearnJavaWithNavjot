@@ -61,7 +61,7 @@ abstract class TheAbstractClass{
   //abstract method - more Explanation available in AbstractMethods.java class
   abstract void showAllDetails();
 
-  //implemented methods
+  //implemented method
   void showNameAndAddress(){
     name = "Navjot";
     address = "Apt. 14 Henrie...., Ireland";

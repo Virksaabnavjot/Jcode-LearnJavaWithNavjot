@@ -23,8 +23,8 @@ SOFTWARE.
 
 /*
 *InterfaceImplementtion.java
-*Purpose:
-*Date:
+*Purpose: This class allows us to implement the interface defined in Interface.java
+*Date: 13/August/2017 | Sunday | 00:23 am (Dublin,Ireland)
 */
 
 //https://www.javatpoint.com/interface-in-java

@@ -22,22 +22,20 @@ SOFTWARE.
 */
 
 /*
-*Interface.java
-*Purpose: To learn to use interface in java and understand the meaning of it.
-*Date: 13/August/2017 | Sunday | 00:22 am (Dublin,Ireland)
+*Polymorphism.java
+*Purpose: This class helps understand the concept of Polymorphism in java
+*Date:
 */
 
-/*Explanation: What is Interface ? Why use it? How to make use of it ? How to implement it?
-http://tutorials.jenkov.com/java/interfaces.html
+public class Polymorphism{
 
 
-*/
-public interface Interface{
 
-  //variable
-  public String name = "Navjot";
 
-  //Method
-  public void greetings();
+
+
+
+
+
 
 }
