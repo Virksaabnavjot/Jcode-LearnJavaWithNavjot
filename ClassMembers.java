@@ -48,19 +48,20 @@ public class ClassMembers{
     return schoolName;
   }
 
-  //3- constant
-  
+  //3- constants - refer to Constants.java class
 
-  //constructor - more info available in Constructor.java class
-  public ClassMembers(){
+  //default constructor - more info available in Constructor.java class
+  public ClassMembers(){}
+
+  public static void main(String[] args) {
+    System.out.println("Number of Students: " +ClassVariables.noOfStudents);
+    System.out.println("Number of Kids: " +ClassMethods.getNoOfKids()+ "\n");
+
+    System.out.println("Number of teachers: " +ClassMembers.getNoOfTeachers());
+    System.out.println("School Name: " +ClassMembers.getSchoolName()+ "\n");
+
+    System.out.println("Website URL: " +Constants.URL);
+    System.out.println("Website RESPONSE TIME: " +Constants.RESPONSE_TIME+ " seconds");
 
   }
-
-public static void main(String[] args) {
-  System.out.println("Number of Students: " +ClassVariables.noOfStudents);
-  System.out.println("Number of Kids: " +ClassMethods.getNoOfKids()+ "\n");
-
-  System.out.println("Number of teachers: " +ClassMembers.getNoOfTeachers());
-  System.out.println("School Name: " +ClassMembers.getSchoolName());
-}
 }
