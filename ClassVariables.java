@@ -65,11 +65,15 @@ public class ClassVariables{
   int studentId;
 
   //declaring class variable - using the static keyword
-  private static int noOfStudents;
+  public static int noOfStudents = 6;
 
   //constructor - more info available in Constructor.java class
   public ClassVariables(){
 
+  }
+
+  public static void main(String[] args) {
+    System.out.println(noOfStudents);
   }
 
 }

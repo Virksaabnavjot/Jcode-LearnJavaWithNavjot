@@ -33,7 +33,11 @@ of how many instances/objects of the class exits.
 public class ClassMembers{
 
   //1- declaring class variables
-  private static int noOfStudents; //Refer to ClassVariables.java class for detailed explanation
+  private static int noOfTeachers; //Refer to ClassVariables.java class for detailed explanation
+
+  /*example: her we, will create an object/instance of ClassVariables.java class and manipulate
+  the value of its class variable*/
+
 
   //2-declaring class methods
 
@@ -46,4 +50,7 @@ public class ClassMembers{
 
   }
 
+public static void main(String[] args) {
+  System.out.println(ClassVariables.noOfStudents);
+}
 }
