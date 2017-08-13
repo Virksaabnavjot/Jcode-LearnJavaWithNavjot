@@ -29,7 +29,7 @@ SOFTWARE.
 
 /*Explanation: https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
 
-Class Variables - In this class we will understand, what are class variables(fields)
+Class Variables / Static Variables - In this class we will understand, what are class variables(fields)
 and how they are different from other/instance variables?
 
 1- Class Variables - When a number of objects are created from the same class blueprint,
