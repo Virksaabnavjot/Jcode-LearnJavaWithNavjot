@@ -58,20 +58,47 @@ By default of the value of boolean primitive type is false.
 complement integer. This keyword is also used to declare that a method returns a
 value of the primitive type byte.
 
-case
-A statement in the switch block can be labeled with one or more case or default labels. The switch statement evaluates its expression, then executes all statements that follow the matching case label; see switch.[8]
-catch
-Used in conjunction with a try block and an optional finally block. The statements in the catch block specify what to do if a specific type of exception is thrown by the try block.
-char
-Defines a character variable capable of holding any character of the java source file's character set.
-class
-A type that defines the implementation of a particular kind of object. A class definition defines instance and class fields, methods, and inner classes as well as specifying the interfaces the class implements and the immediate superclass of the class. If the superclass is not explicitly specified, the superclass is implicitly Object. The class keyword can also be used in the form Class.class to get a Class object without needing an instance of that class. For example, String.class can be used instead of doing new String().getClass().
-continue
-Used to resume program execution at the end of the current loop body. If followed by a label, continue resumes execution at the end of the enclosing labeled loop body.
-default
-The default keyword can optionally be used in a switch statement to label a block of statements to be executed if no case matches the specified value; see switch.[8][9] Alternatively, the default keyword can also be used to declare default values in a Java annotation. From Java 8 onwards, the default keyword is also used to specify that a method in an interface provides the default implementation of a method.
-do
-The do keyword is used in conjunction with while to create a do-while loop, which executes a block of statements associated with the loop and then tests a boolean expression associated with the while. If the expression evaluates to true, the block is executed again; this continues until the expression evaluates to false.[10][11]
+- case
+--- A statement in the switch block can be labeled with one or more case or
+default labels. The switch statement evaluates its expression, then executes
+all statements that follow the matching case label; see switch.
+
+- catch
+--- Used in conjunction with a try block and an optional finally block.
+The statements in the catch block specify what to do if a specific type of exception
+is thrown by the try block.
+
+- char
+--- Defines a character variable capable of holding any character of the java source
+file's character set.
+
+- class
+--- A type that defines the implementation of a particular kind of object. A class
+definition defines instance and class fields, methods, and inner classes as
+well as specifying the interfaces the class implements and the immediate
+superclass of the class. If the superclass is not explicitly specified, the
+superclass is implicitly Object. The class keyword can also be used in the form
+Class.class to get a Class object without needing an instance of that class.
+For example, String.class can be used instead of doing new String().getClass().
+
+-continue
+--- Used to resume program execution at the end of the current loop body.
+If followed by a label, continue resumes execution at the end of the enclosing
+labeled loop body.
+
+- default
+--- The default keyword can optionally be used in a switch statement to label a
+block of statements to be executed if no case matches the specified value; see switch.
+Alternatively, the default keyword can also be used to declare default values in a
+Java annotation. From Java 8 onwards, the default keyword is also used to specify
+that a method in an interface provides the default implementation of a method.
+
+- do
+--- The do keyword is used in conjunction with while to create a do-while loop,
+which executes a block of statements associated with the loop and then tests a
+boolean expression associated with the while. If the expression evaluates to true,
+the block is executed again; this continues until the expression evaluates to false.
+
 double
 The double keyword is used to declare a variable that can hold a 64-bit double precision IEEE 754 floating-point number.[4][5] This keyword is also used to declare that a method returns a value of the primitive type double.[6][7]
 else
@@ -147,18 +174,24 @@ volatile
 Used in field declarations to specify that the variable is modified asynchronously by concurrently running threads. Methods, classes and interfaces thus cannot be declared volatile, nor can local variables or parameters.
 while
 The while keyword is used to create a while loop, which tests a boolean expression and executes the block of statements associated with the loop if the expression evaluates to true; this continues until the expression evaluates to false. This keyword can also be used to create a do-while loop; see do.[10][11]
-Reserved words for literal values[edit]
-true
-A boolean literal value.
-null
-A reference literal value.
-false
-A boolean literal value.
-Unused[edit]
-const
-Although reserved as a keyword in Java, const is not used and has no function.[2][1] For defining constants in Java, see the final keyword.
-goto
-Although reserved as a keyword in Java, goto is not used and has no function
+
+Reserved words for literal values
+- true
+--- A boolean literal value.
+
+- null
+--- A reference literal value.
+
+-false
+--- A boolean literal value.
+
+
+Unused
+- const
+--- Although reserved as a keyword in Java, const is not used and has no function.[2][1] For defining constants in Java, see the final keyword.
+
+- goto
+--- Although reserved as a keyword in Java, goto is not used and has no function
 
 
 
