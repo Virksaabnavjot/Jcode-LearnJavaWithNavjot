@@ -32,26 +32,44 @@ SOFTWARE.
 Class Variables - In this class we will understand, what are class variables(fields)
 and how they are different from other/instance variables?
 
-Class Variables meaning - The variable that belong to a class, rathor to the instance of
-that class.
+1- Class Variables - When a number of objects are created from the same class blueprint,
+they each have their own distinct copies of instance variables, in this example,
+we have studentId, name and address which are instance variables as each student will have
+their distinct student Id, name and address, basically meaning each Student object has its
+own values for these variables, stored in different memory locations.
+
+2- Sometimes, we want to have variables that are common to all objects, example: noOfStudents
+This can be accomplised using the "static" modifier to the variable. Variables/fields that
+have "static" modifier in their declaration are class variables/static fields.
+
+3- Class Variables meaning - The variable that belong to a class, rather with any object/the instance of
+of a class.
 Example: private static int noOfStudents;
 Class variables are referenced by the class name itself, as in (this case)
 ClassVariables.noOfStudents  or Student.noOfStudents
 
+4- Every instance of a class shares a class variable, which is stored in a fixed location in memory.
+
+5- Any object can change the value of a class variable, but class variables can also be manipulated
+without creating an instance of the class.
+
+6- You can also refer to static fields with an object reference like
+myStudent.noOfStudents
+but this is discouraged because it does not make it clear that they are class variables
+
 */
 public class ClassVariables{
 
-  //declaring instance variables
+  //declaring variables
   String studentName, address;
   int studentId;
 
   //declaring class variable - using the static keyword
   private static int noOfStudents;
 
-  //constructor - more info avaible in Constructor.java class
+  //constructor - more info available in Constructor.java class
   public ClassVariables(){
 
   }
-
 
 }
