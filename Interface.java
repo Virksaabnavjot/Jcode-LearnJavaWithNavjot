@@ -30,14 +30,50 @@ SOFTWARE.
 /*Explanation: What is Interface ? Why use it? How to make use of it ? How to implement it?
 http://tutorials.jenkov.com/java/interfaces.html
 
+Interface (meaning - interact with )
+
+1-Interface just specify the method declaration (implicitly public and abstract)
+Example: public void greetings();
+
+2-We dont really have to write the "public" keyword as all the methods of
+an interface are public by default.
+Example: void greetings(); is also correct.
+
+3-Interface can only contain fields which are (implicitly public static final)
+Example: public static final String name = "Navjot";
+
+or
+
+String name = "Navjot"; is also correct and its (public static and final by default
+so, we dont really need to write these).
+
+4- An Interface like an abstract class cannot be instantiated (meaning we cant create
+objects of an interface).
+
+5- An Interface do not have a constructor (as we cant create object what do we need
+constructor for?).
+
+6- If a class that implements an interface doesn't implement/define all the methods
+of that interface, then that class must be declared as an abstract class and method
+declerations must be provided by the subclasses that extent the abstract class.
 
 */
+
 public interface Interface{
 
-  //variable
-  public String name = "Navjot";
+  /*Variables - Syntax: dataType variableName = value;
+  (both the variables below are public, static and final by default either
+  we write public static final or not)
+  */
+  public static final String firstName = "Navjot";
+  String lastName = "Singh";
 
-  //Method
+
+  /*Methods - Syntax: returnType methodName(parameters);
+  methods are abstract and public by default no matter we add public or not its
+  the same thing.
+  */
   public void greetings();
+  int guessAge(int age);
 
 }

@@ -32,15 +32,31 @@ SOFTWARE.
 
 public class InterfaceImplementation implements Interface{
 
+  static int age; //declaring a static variable to store age
+
+  //implementing a method
   public void greetings(){
-    System.out.println("Hello, " + Interface.name);
+    System.out.println("Hello, " + Interface.firstName);
   }
 
+  //implementing the method to return an int (age)
+  public int guessAge(int age){
+    return age+3;
+  }
+
+  //main method - look for MainMethod.java class for more information
   public static void main(String[] args) {
 
-    System.out.println(Interface.name);
+    //printing details
+    System.out.println(Interface.firstName);
+    System.out.println(Interface.lastName);
+
+    //creating an object
     InterfaceImplementation i = new InterfaceImplementation();
-    i.greetings();
+
+    i.greetings(); //greetings
+    age = i.guessAge(19); //pass a parameter to the function/method that wil return an int
+    System.out.println("Guessed Age: " +age); //print guessed age
 
   }
 
