@@ -33,17 +33,23 @@ of how many instances/objects of the class exits.
 public class ClassMembers{
 
   //1- declaring class variables
-  private static int noOfTeachers; //Refer to ClassVariables.java class for detailed explanation
-
-  /*example: her we, will create an object/instance of ClassVariables.java class and manipulate
+  private static int noOfTeachers = 34; //Refer to ClassVariables.java class for detailed explanation
+  private static String schoolName = "National Public School";
+  /*example: here we, will create an object/instance of ClassVariables.java class and manipulate
   the value of its class variable*/
 
 
   //2-declaring class methods
+  public static int getNoOfTeachers(){
+    return noOfTeachers;
+  }
 
+  public static String getSchoolName(){
+    return schoolName;
+  }
 
   //3- constant
-
+  
 
   //constructor - more info available in Constructor.java class
   public ClassMembers(){
@@ -51,6 +57,10 @@ public class ClassMembers{
   }
 
 public static void main(String[] args) {
-  System.out.println(ClassVariables.noOfStudents);
+  System.out.println("Number of Students: " +ClassVariables.noOfStudents);
+  System.out.println("Number of Kids: " +ClassMethods.getNoOfKids()+ "\n");
+
+  System.out.println("Number of teachers: " +ClassMembers.getNoOfTeachers());
+  System.out.println("School Name: " +ClassMembers.getSchoolName());
 }
 }

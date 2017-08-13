@@ -55,6 +55,16 @@ there is no instance for this to refer to.
 */
 public class ClassMethods{
 
+/*
+declaring class variable - using the static keyword and private access modifier,
+private meaning the variable/field cannot be accessed out this class
+*/
+private static int noOfKids = 20;
+
+//declaring a class / static method to return number of kids
+public static int getNoOfKids(){
+  return noOfKids;
+}
 
 
 
